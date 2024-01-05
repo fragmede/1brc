@@ -47,3 +47,6 @@ jobs:
 
       - name: 'Build project'
         run: mvn -B clean verify -Pci
+
+      - name: 'Test branch.'
+        run: test.sh ${{ vars.GITHUB_REPOSITORY_OWNER }}
